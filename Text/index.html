@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dev_Collab Editor</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="InnoStellar Dev_Collab">
+    <meta property="og:description" content="Collaborative Notepad" />
+    <meta property="og:url" content="https://txt-edit.prakshal.repl.co/#506396fd-236a-4e28-b8f3-82e61a0b70d3">
+    <meta property="og:image" content="http://innohome.vtp.repl.co/l2.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@innostellar">
+    <meta name="twitter:title" content="InnoStellar Dev_Collab">
+    <meta name="twitter:description" content="Collaborative Notepad">
+    <meta name="twitter:image" content="http://innohome.vtp.repl.co/l2.png">
+
+    <!-- load MUI -->
+    <link href="vendor/mui/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="vendor/mui/mui.min.js"></script>
+    <script src="vendor/skygear/polyfill.min.js"></script>
+    <script src="vendor/skygear/skygear.min.js"></script>
+    <!-- load code highlighter -->
+    <link rel="stylesheet" href="vendor/prism/prism.css">
+
+   <link rel="stylesheet" href="vendor/codeflask/codeflask.css">
+
+   <script src="vendor/prism/prism.js"></script>
+    <script src="vendor/codeflask/codeflask.js"></script>
+    codeflask
+
+  <!--Zepto-->
+  <script src="vendor/zepto/zepto.min.js"></script>
+
+    <link href="app.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <div id="skypad-title" contenteditable="true">
+    <input name="pad-title" type="input" value="// Skypad Loading..." placeholder="Enter note title" />
+  </div>
+  <div id="skypad-display"></div>
+  <div id="side-bar">
+    <h5>My notes</h5>
+    <ul id="note-list">
+    </ul>
+  </div>
+  <div id="share-bar"><a href="#" target="_blank" alt="Create new pad">New Page</a> | Share: <a id="share-url" target="_blank" href="{{note-url}}">[url]</a> <a id="share-twitter" target="_blank" href="http://twitter.com/share?text=I've created a pad using skypad!&url={{note-url}}&hashtags=InnoStellar,Dev-Collab">[twitter]</a> <a id="share-fb" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{note-url}}">[facebook]</a><div id="credits">Visit <a target="_blank" href="http://innohome.vtp.repl.co/">InnoStellar</a> | Our <a target="_blank" href="https://github.com/innostellar"> Projects</a> </div></div>
+  <div class="mui-dropdown code-highlight-selector">
+    <button class="mui-btn mui-btn--small mui-btn--flat mui-btn--primary" data-mui-toggle="dropdown">
+      <span id="code-highlight-caption">Code highlight</span>
+      <span class="mui-caret"></span>
+    </button>
+    <ul class="mui-dropdown__menu">
+      <li><a data-lang="None">None</a></li>
+      <li><a data-lang="JavaScript">JavaScript</a></li>
+      <li><a data-lang="HTML">HTML</a></li>
+      <li><a data-lang="CSS">CSS</a></li>
+      <li><a data-lang="clike">C</a></li>
+      
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
+
+  </body>
+</html>

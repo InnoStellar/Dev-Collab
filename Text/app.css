@@ -1,0 +1,144 @@
+html,body {
+    height:100%;
+}
+
+body {
+  background-color: #111;
+}
+
+div#skypad-title {
+  position: fixed;
+}
+
+div#skypad-title input {
+  position: fixed;
+  border: 0;
+  height: 30px;
+  width: 100%;
+  font-family: monospace;
+  color: #ecf0f1;
+  margin: 0;
+  padding: 6px 10px;
+  top: 0;
+  line-height: 24px;
+  font-weight: 600;
+  background-color: #2c3e50;
+}
+
+div#skypad-title input:focus {
+  background: #2980b9;
+}
+
+div#skypad-title input::-webkit-input-placeholder { color: #ccc; }
+div#skypad-title input::-moz-placeholder {color: #ccc; }
+div#skypad-title input:-ms-input-placeholder { color: #ccc; } 
+div#skypad-title input:-o-input-placeholder { color: #ccc; } 
+
+
+div#skypad-display {
+  position: fixed;
+  border: 0;
+  padding: 20px;
+  margin-top: 42px;
+  width: 100%;
+  top: 0;
+  color: #fff;
+  background-color: #111;
+  font-family: monospace;
+  height: calc(100% - 130px);
+}
+
+textarea,input:focus {
+    outline: none;
+}
+.CodeFlask__pre {
+  bottom: 0; /* Fix the scrolling problem*/
+}
+
+#credits {
+  color: #999;
+}
+
+#credits a {
+  color: #777;
+}
+
+#share-bar {
+  border: 0;
+  position: fixed;
+  margin: 0;
+  width:100%;
+  bottom: 0;
+  height: 40px;
+  z-index: 20;
+  color: #fff;
+  background-color: #333;
+  font-family: monospace;
+  padding: 10px;
+  display: none;
+}
+
+#side-bar {
+  float;right;
+  position: fixed;
+  width: 200px;
+  max-width: 30%;
+  top: 42px;
+  bottom: 0;
+  color: #fff;
+  right: 0;
+  background: #2f3640;
+  padding: 10px;
+  border-left: 2px #456184 solid;
+  transition: 1s;
+}
+
+
+#note-list {
+  list-style-type: none;
+}
+
+#note-list li {
+  padding-left: 1em;
+  text-indent: -1em;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
+  width: 120px;
+}
+
+#note-list li:before {
+  content: "📝";
+  padding-right: 5px;
+}
+
+@media (max-width: 500px ){
+  #side-bar {
+    right: -200px;
+  }
+}
+
+.code-highlight-selector {
+  float: right;
+  display: none;
+}
+
+.code-highlight-selector button {
+  font-size: 12px;
+}
+
+.code-highlight-selector ul {
+  font-size: 12px;
+}
+
+.code-highlight-selector ul li a {
+  cursor: pointer;
+}
+@media (max-height: 400px ){
+    #share-bar {
+      visibility: hidden;
+    }
+    div#skypad-display {
+      height: 100%;
+    }
+}

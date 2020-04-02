@@ -1,0 +1,69 @@
+<!-- HomePage is under development. Please feel free to share your ideas and contribute... -->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Dev-Collab</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header class="cd-header container flex justify-between items-center">
+    <a href="#cd-3d-nav" class="cd-header__nav-trigger" aria-label="Toggle menu">
+      <span aria-hidden="true"></span>
+    </a>
+	</header>
+	<main class="cd-main">
+    <!-- <a href="javascript:sketch();">aed</a> -->
+    <div id="a"></div>
+	</main>
+	
+	<nav class="cd-3d-nav js-cd-3d-nav" id="cd-3d-nav">
+		<ul class="cd-3d-nav__list">
+			<li class="cd-3d-nav__item cd-3d-nav__item--selected">
+				<a href="">
+          <i class="fa fa-edit"></i>
+          <span>Sketch</span>
+        </a>
+			</li>
+
+			<li class="cd-3d-nav__item">
+        <a href='javascript:sketch();'>
+          &#60; / &#62;
+          <span>Code</span>
+        </a>
+			</li>
+
+			<li class="cd-3d-nav__item">
+				<a href="#0">
+          <i class="fa fa-share-alt"></i>
+          <span>Share Files</span>
+        </a>
+			</li>
+
+			<li class="cd-3d-nav__item">
+				<a href="#0">
+          <i class="fa fa-book"></i>
+          <span>Resources</span>
+        </a>
+			</li>
+
+			<li class="cd-3d-nav__item">
+				<a href="#0">
+          <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points="13 6 2 6 2 30 26 30 26 19"></polyline> <polygon points="16 20 10 22 12 16 26 2 30 6 16 20"></polygon><line x1="22" y1="6" x2="26" y2="10"></line></svg>
+          <span>New</span>
+        </a>
+			</li>
+		</ul>
+
+		<span class="cd-3d-nav__marker cd-3d-nav__marker--col-1" aria-hidden="true"></span>	
+	</nav>
+<script src = "displayer.js"></script>
+<script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
